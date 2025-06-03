@@ -1,0 +1,15 @@
+# Use official Python base image
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy project files
+COPY revealing_mind ./revealing_mind
+WORKDIR /app/revealing_mind
+
+# Install requirements
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+# Run the app
+CMD ["python", "main.py"]
