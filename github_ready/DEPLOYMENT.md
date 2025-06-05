@@ -46,6 +46,8 @@ git push origin main
 3. **Automatic Detection**
    - Railway will automatically detect your project configuration
    - It will use the `railway.json` and `Procfile` we created
+   - Both files define the start command `python backend/src/main.py` (no
+     virtualenv activation needed)
 
 4. **Wait for Build**
    - Railway will build your project (takes 2-3 minutes)
