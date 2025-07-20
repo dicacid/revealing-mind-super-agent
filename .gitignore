@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# IDE and editor
+.vs/
+*.log
+
+# Build artifacts
+github_ready/frontend/dist/
+
+# OS and archive files
+*.zip
+OneDrive/
+
+.env
