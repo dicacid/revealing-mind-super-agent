@@ -10,7 +10,7 @@ from src.routes.user import user_bp
 from src.routes.chat import chat_bp
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'change-me')
 
 # Enable CORS for frontend communication
 CORS(app)

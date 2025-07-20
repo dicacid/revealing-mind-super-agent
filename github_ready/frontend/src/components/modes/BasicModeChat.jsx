@@ -14,6 +14,7 @@ const BasicModeChat = () => {
       timestamp: new Date()
     }
   ]);
+  const [conversationId] = useState(() => crypto.randomUUID());
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -46,7 +47,7 @@ const BasicModeChat = () => {
         method: 'POST',
         body: JSON.stringify({
           message: userMessage.content,
-          conversation_id: 'default' // For now, use a default conversation
+          conversation_id: conversationId
         }),
       });
       

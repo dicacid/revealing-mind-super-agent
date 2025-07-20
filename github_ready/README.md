@@ -66,11 +66,18 @@ Designed mobile-first with responsive interface that works perfectly on:
 - No sensitive data in code
 - Production-ready security headers
 
+## ⚙️ Environment Variables
+
+- `OPENAI_API_KEY` - Required for AI features
+- `SECRET_KEY` - Flask session secret (set in backend)
+- `VITE_BACKEND_URL` - URL of the backend server during development
+
 ## 📞 Support
 
 - **Issues**: Use GitHub Issues
-- **Documentation**: See `/docs` folder
 - **Deployment Help**: Check `DEPLOYMENT.md`
+
+This project is released under the [MIT License](../LICENSE).
 
 ---
 
